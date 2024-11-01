@@ -16,3 +16,9 @@
         <p>Nombre de la biblioteca © {{ date('Y-m-d') }}</p>
     </footer>
 @endsection
+
+@if(session('success'))
+    <script>
+        alertify.success("{{ session('success') }}");
+    </script>
+@endif
